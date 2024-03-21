@@ -8,5 +8,9 @@ namespace CAlgoCodes.DataStructure
 {
     public class StackAlgo
     {
+        public void push()
+        {
+
+        }
     }
 }
