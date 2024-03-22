@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace CAlgoCodes.DataStructure
 {
-    public class StackAlgo
+    public class Nodes
     {
-        public void push()
+        public Nodes Next;
+        public int data;
+        public Nodes(int data)
         {
-
+            this.data = data;
+            Next = null;
         }
     }
 }
