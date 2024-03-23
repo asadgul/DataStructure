@@ -1,7 +1,26 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using CAlgoCodes.Binary_Trees;
 using CAlgoCodes.DataStructure;
 using CAlgoCodes.DataStructure.Queues;
 using CAlgoCodes.DataStructure.StackData_Structure;
+//Binary Tree
+BinaryTree binaryTree = new BinaryTree();
+//Nodes nodes = binaryTree.CreateTree(new int[] { 1, 2, 3, -1, -1, 5, 6, 7, 9, -1, -1, 10 });
+Nodes nodes = binaryTree.CreateTree(new int[] { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1,6, -1,-1 });
+Console.WriteLine("Preorder");
+binaryTree.Preorder(nodes);
+
+Console.WriteLine("Inorder");
+binaryTree.Inorder(nodes);
+Console.WriteLine("Postorder");
+binaryTree.Postorder(nodes);
+Console.WriteLine("Total Nodes");
+Console.WriteLine( binaryTree.CountofNode(nodes));
+
+
+//Console.WriteLine(nodes.data);
+
+
 //StackLinkList stackLinkList = new StackLinkList();
 //stackLinkList.push(1);
 //stackLinkList.push(2);

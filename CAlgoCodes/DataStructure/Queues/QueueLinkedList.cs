@@ -26,6 +26,17 @@ namespace CAlgoCodes.DataStructure.Queues
             Tail.Next = nodes;
             Tail=nodes;
         }
+        public void Add(Nodes root)
+        {
+            Nodes nodes = root;
+            if (Tail == null)
+            {
+                Tail = Head = nodes;
+                return;
+            }
+            Tail.Next = nodes;
+            Tail = nodes;
+        }
         public int Remove()
         {
             if (IsEmpty())

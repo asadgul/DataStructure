@@ -9,11 +9,15 @@ namespace CAlgoCodes.DataStructure
     public class Nodes
     {
         public Nodes Next;
+        public Nodes Left;
+        public Nodes Right;
         public int data;
         public Nodes(int data)
         {
             this.data = data;
             Next = null;
+            this.Left = null;
+            this.Right = null;
         }
     }
 }
